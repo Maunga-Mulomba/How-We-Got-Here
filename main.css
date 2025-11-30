@@ -1,0 +1,103 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(241, 243, 245);
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	margin: 3rem;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 80%;
+	margin: 2rem 0;
+}
+
+.slide {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 3rem;
+}
+
+h1 {
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+hr {
+	width: 100%;
+	border: 1px solid rgb(231, 231, 231);
+	margin: 3rem 0;
+}
+
+img {
+	width: 400px;
+	height: auto;
+}
+
+.copy {
+	padding-right: 2rem;
+	line-height: 2;
+}
+
+.text {
+	text-align: justify;
+	font-family: "Cormorant Garamond", serif;
+	font-weight: 500;
+	font-size: 1rem;
+}
+
+.conclusion {
+	text-align: center;
+	font-family: "Cormorant Garamond", serif;
+	line-height: 1.3;
+	font-style: italic;
+}
+
+h2 {
+	font-size: 1.3rem;
+	margin-bottom: 1rem;
+}
+
+/* QUERIES */
+
+@media (max-width: 900px) {
+	.container {
+		width: 90%;
+	}
+
+	.slide {
+		display: flex;
+		flex-direction: column-reverse;
+		gap: 1rem;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+a .back-btn {
+	display: block;
+	text-align: left;
+	cursor: pointer;
+}
+
+nav a {
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	color: black;
+	margin: 2rem 0;
+}
